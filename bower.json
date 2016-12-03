@@ -1,0 +1,17 @@
+{
+  "name": "Projeto",
+  "homepage": "https://github.com/Claytonkuiaski/SteelCard",
+  "authors": [
+    "claytonKuiaski <claytonKuiaski@hotmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
