@@ -1,3 +1,9 @@
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables
+@import ../bower_components/breakpoint-sass/stylesheets/breakpoint
+@import mixins
+
+
 .header
 	min-height: 630px	
 	background:
@@ -18,4 +24,10 @@
 	margin-top: 40px
 	margin-left: 40%
 	width: 200px
+	+breakpoint($tablet)
+		margin-left: 20%
+		width: 400px
+	+breakpoint($celular)
+		margin-left: 0%	
+		+img-responsive
 
