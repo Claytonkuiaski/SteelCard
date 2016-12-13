@@ -1,3 +1,21 @@
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables
+@import ../bower_components/breakpoint-sass/stylesheets/breakpoint
+@import mixins
+
+
+.navbar-nav
+   +breakpoint($tablet)
+      display: none
+.navbar-toggle      
+   +breakpoint($tablet)
+      display: inline
+
+
+
+
+
+
 
 .navbar-default 
    background: none
@@ -28,3 +46,8 @@
 .navbar-default .navbar-nav>.open>a:focus 
    color: #fff
    background-color: none
+
++breakpoint($tablet)
+   .navbar-toggle:focus 
+   outline: 0
+       
