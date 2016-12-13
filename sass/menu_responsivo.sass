@@ -4,19 +4,17 @@
 @import mixins
 
 
-.navbar-nav
-   +breakpoint($tablet)
-      display: none
-.navbar-toggle      
-   +breakpoint($tablet)
+.navbar-collapse .navbar-nav
+   display: none
+   +breakpoint($celubot)
       display: inline
-
-
-
-
-
-
-
+      
+.bar2 .navbar-nav
+   color: #fff
+   background-color: transparent
+   +breakpoint($celubot)
+      display: none      
+   
 .navbar-default 
    background: none
    border: none
@@ -36,8 +34,12 @@
 
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus 
-   color: #0C2C4C
+   color: #fff
    background-color: transparent
+   +breakpoint($celubot)
+      color: black
+      background-color: #fff
+      +transition(.6s)
 
 
 
@@ -47,7 +49,5 @@
    color: #fff
    background-color: none
 
-+breakpoint($tablet)
-   .navbar-toggle:focus 
-   outline: 0
+
        
