@@ -3,7 +3,6 @@
 @import ../bower_components/breakpoint-sass/stylesheets/breakpoint
 @import mixins
 
-
 hr
 	border: 1px solid #bcbcbc
 	size: 50%
@@ -28,11 +27,12 @@ p
 	margin-left: 30px
 .logoConteudo
 	+make-sm-column(6)
+	+img-responsive
 	margin-top: 100px	
 	margin-bottom: 100px
 	+breakpoint($tablet)
-		+make-sm-column(12)
-		+img-responsive
+		+make-sm-column(12)	
+		
 .artigo
 	+make-sm-column(6)
 	margin-top: 120px
